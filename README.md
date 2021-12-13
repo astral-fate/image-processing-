@@ -73,7 +73,7 @@ we will define a new bufferedImage as we did beforem but this time we won't asso
                 BufferedImage readImage = null;
          
                         
-                try (){
+                try {
                 readImage =  ImageIO.read  (new File("d//sun.jpg"));
            
                  }
@@ -104,5 +104,21 @@ now for creating an image, and saving it into a file we use the same try catch m
         } catch (IOException ex) {
 
         }
+        
+        
+        
+to apply a filter, we define a new rescale operator object, and miss a bit with the number. if its close to 0 it's dark, when it's close to 255 it's bright 
+
+
+        RescaleOp dark = new RescaleOp(0.6F, 0.0F, null);
+        BufferedImage darkim = dark.filter(readImage, null);
+        g2.drawImage(darkim,80, 70, this);
+        
+        
+
+
+![Uploading image.png…]()
+
+
         
         
