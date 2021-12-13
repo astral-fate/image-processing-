@@ -167,7 +167,7 @@ to rotate the image, we define an affine transformation object
 
 
 
-![image](https://user-images.githubusercontent.com/63984422/145847945-e8686912-d347-46d5-9096-b39eaf5b30a2.png)
+![image](https://user-images.githubusercontent.com/63984422/145847945-e8686912-d347-46d5-9096-b39eaf5b30a2.png) 
 
         
         
