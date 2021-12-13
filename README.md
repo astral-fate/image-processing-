@@ -86,6 +86,10 @@ we will define a new bufferedImage as we did beforem but this time we won't asso
 
 
 
+the output will be as follows:
+
+
+![Uploading image.png…]()
 
 
 
@@ -95,8 +99,7 @@ now for creating an image, and saving it into a file we use the same try catch m
         try {
 
             bi = ImageIO.read(new File("D:\\New folder\\Skel\\src\\skel\\sun.jpg"));
-           // ImageIO.read(bi, "jpg", bi);
-
+    
         } catch (IOException ex) {
 
         }
