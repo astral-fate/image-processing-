@@ -144,13 +144,15 @@ to use filter to sharpen the image we do the following
   
   
   
-     ![image](https://user-images.githubusercontent.com/63984422/145881598-a6f94030-23eb-4f6c-a8bd-efd58739d408.png)
+![image](https://user-images.githubusercontent.com/63984422/145881598-a6f94030-23eb-4f6c-a8bd-efd58739d408.png)
 
         
         
    the output 
    
-   ![image](https://user-images.githubusercontent.com/63984422/145847132-57867fe6-ed08-4424-9b01-051daf7aa453.png)
+   
+   
+![image](https://user-images.githubusercontent.com/63984422/145847132-57867fe6-ed08-4424-9b01-051daf7aa453.png)
    
    
    
