@@ -71,14 +71,14 @@ we will define a new bufferedImage as we did beforem but this time we won't asso
    
    
                 BufferedImage readImage = null;
-                readImage = new IOimage.read (new file("d//sun.jpg"));
-                           
+         
+                        
                 try (){
-                readImage = new IOimage.read (new file("d//sun.jpg"));
+                readImage =  ImageIO.read  (new File("d//sun.jpg"));
            
                  }
            
-                 catch (IOexeption ex) {
+                 catch (IOException ex) {
                  }
                  g2.drawImage(readImage, 0,0 this);
           
