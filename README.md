@@ -116,9 +116,58 @@ to apply a filter, we define a new rescale operator object, and miss a bit with 
         
         
 
+![image](https://user-images.githubusercontent.com/63984422/145844165-f3c2cde4-71aa-44c8-bcc4-57d4ec26eaae.png)
 
-![Uploading image.png…]()
 
+
+
+
+
+to use filter to sharpen the image we do the following
+
+
+
+         float [] data = {0f,0f,0f,0f, -1f,0f,1f,1f,-1f};
+
+        float [] data2 = {0f/11,0f/11.0f/11.0f,0f/11.0f,0f/11.0f, -1f/11.0f,0f/11.0f,1f/11.0f,1f/11.0f,-1f/11};
+
+
+        Kernel kr = new Kernel(3,3, data);
+
+        ConvolveOp op2= new ConvolveOp(kr);
+
+        BufferedImage SHARP = op2.filter(readImage, null);
+        g2.drawImage(SHARP, 0, 0, null);
+        
+        
+        
+        
+   the output 
+   
+   ![image](https://user-images.githubusercontent.com/63984422/145847132-57867fe6-ed08-4424-9b01-051daf7aa453.png)
+
+
+
+to rotate the image, we define an affine transformation object 
+
+
+         AffineTransform af = new AffineTransform();
+
+        af.setToRotation(Math.PI/6, 200, 200);
+
+        AffineTransformOp af2 = new AffineTransformOp(af, AffineTransformOp.TYPE_BILINEAR);
+        BufferedImage rotate = af2.filter(readImage, null);
+        g2.drawImage(rotate, 0,0, this);
+
+       
+
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/63984422/145847945-e8686912-d347-46d5-9096-b39eaf5b30a2.png)
 
         
         
