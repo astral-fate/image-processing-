@@ -127,9 +127,8 @@ to use filter to sharpen the image we do the following
 
 
 
-         float [] data = {0f,0f,0f,0f, -1f,0f,1f,1f,-1f};
-
-        float [] data2 = {0f/11,0f/11.0f/11.0f,0f/11.0f,0f/11.0f, -1f/11.0f,0f/11.0f,1f/11.0f,1f/11.0f,-1f/11};
+        float [] data = {0f,-1f,0f,-1f,5f,-1f,0f,-1f,0f};
+        float [] data2 = {0f/9,-1f/9,0f/9,-1f/9,5f/9,-1f/9,0f/9,-1f/9,0f/9 };
 
 
         Kernel kr = new Kernel(3,3, data);
@@ -139,6 +138,12 @@ to use filter to sharpen the image we do the following
         BufferedImage SHARP = op2.filter(readImage, null);
         g2.drawImage(SHARP, 0, 0, null);
         
+        
+        
+  we created two arrays, based on the matrix that is needed for the 3 x 3 kernels to do some image processing; including sharpen, edge detection operators.
+  
+  
+  
         
         
         
