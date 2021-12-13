@@ -89,7 +89,8 @@ we will define a new bufferedImage as we did beforem but this time we won't asso
 the output will be as follows:
 
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/63984422/145833524-1dee434a-c657-4a11-a8e1-e73058947eb3.png)
+
 
 
 
